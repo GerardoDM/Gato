@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>PracticaGato</title>
+	<script src="js/jquery.js"></script>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link rel="stylesheet" href="C:\xampp\htdocs\Gerardo.com\JavaScript\css.bootstrap.min.css">
+	
+	<link rel="stylesheet" href="stylesgato.css">
+
+</head>
+<body>
+
+	<div class = "container">
+		<div class = "row1">
+			<div class="cuadro"></div>
+			<div class="cuadro"></div>
+			<div class="cuadro"></div>
+
+        </div>
+
+		<div class = "row2">
+			<div class="cuadro"></div>
+			<div class="cuadro"></div>
+			<div class="cuadro"></div>
+
+        </div>
+
+		<div class = "row3">
+			<div class="cuadro"></div>
+			<div class="cuadro"></div>
+			<div class="cuadro"></div>
+
+        </div>
+    </div>
+
+</body>
+
+</html>
+
+<script>
+	
+
+$(document).ready(function () {
+	alert("ready");
+});
+
+var i=0;
+
+$(".cuadro").click(function() {
+	if (i==0)
+	{
+		$(this).html("o");
+		i=1
+	}
+	else
+	{ 
+		$(this).html("x");
+		i=0
+	}
+});
+</script>
+
+
+
+	
